@@ -28,7 +28,7 @@
             </ul>
             <form class="d-flex">
                 <input class="form-control me-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
-                <button  class="btn btn-outline-success" type="submit">Search</button>
+                <!-- <button  class="btn btn-outline-success" type="submit" >Search</button> -->
             </form>
         </div>
     </div>
@@ -43,16 +43,17 @@
                     <input type="text" id="addTitle" class="form-control" placeholder="Title">
                   </div>
                 <h5 class="card-title">Add Note</h5>
-             <textarea class="form-control" id="addTxt" rows="3"></textarea>
+             <textarea class="form-control" id="addTxt" rows="3" placeholder="add your text here..."></textarea>
                 
                 <button class="btn btn-primary my-2" id="addBtn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
                         <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
-                      </svg>Save</button>
+                      </svg> Save</button>
             </div>
         </div>
         <h1 class="p-3 my-3 mb-2 bg-dark text-white">Your Notes</h1>
-        <div id="notes" class="container-fluid row">
+        <div id="toast"></div>
+        <div id="notes" class="row justify-content-center">
             <!-- <div class="noteCard card mx-2 my-2" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Note</h5>
