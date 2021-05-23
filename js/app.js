@@ -38,7 +38,7 @@ function showNotes() {
   let html = "";
   notesObj.forEach(function (element, index) {
     html += `
-            <div class="noteCard shadow p-3 mb-3 bg-white rounded card mx-2 my-2 col-3">
+            <div class="noteCard shadow p-3 mb-3 bg-white rounded card mx-2 my-2" style="width: 21.25rem">
                 <div class="card-body">
                     <h5 class="card-title text-primary">Note ${index + 1}</h5>
                     <h5 class="card-title">${element.title}</h5>
@@ -102,7 +102,7 @@ search.addEventListener("input", function () {
 let copyTxt = (index) => {
     let data = document.getElementById(`data-${index}`).innerText;
     navigator.clipboard.writeText(data).then(()=>{
-        console.log("success");
+        // console.log("success");
         // alert(`Copied : ${data}`)
         let toast = document.getElementById('toast');
         toast.innerHTML =`<div class="alert alert-success fade show" role="alert" data-bs-dismiss="alert">
